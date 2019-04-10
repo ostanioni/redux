@@ -57,8 +57,8 @@ module.exports = {
       components: `${CONTEXT}/src/components`,
       resources:  `${CONTEXT}/src/resources`,
       tables:     `${CONTEXT}/src/tables`,
-      stores:     `${CONTEXT}/src/stores`,
-      styled:     `${CONTEXT}/src/styled`,
+      store:      `${CONTEXT}/src/store`,
+      styles:     `${CONTEXT}/src/styles`,
       ts:         `${CONTEXT}/src/typescript`,
       algs:       `${CONTEXT}/src/typescript/algorithms`,
       webgl:      `${CONTEXT}/src/webgl`,
@@ -67,7 +67,6 @@ module.exports = {
       workers:    `${CONTEXT}/public/workers`,
       css:        `${CONTEXT}/public/css`,
       imgs:       `${CONTEXT}/public/imgs`,
-      snapsvg:    'snapsvg/dist/snap.svg.js',
     },
   },
   module: {
