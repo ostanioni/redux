@@ -6,7 +6,7 @@
 + redux-thunk 2.3.0
 + react-router 5.0
 + styled-components 4.2
-+ eslint 5.15
++ eslint 5.16
 + ...
 
 # Available Scripts:
