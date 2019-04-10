@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const MrThirdStyled = styled.div.attrs(
 props=>{
@@ -13,14 +14,23 @@ margin: 10px;
 text-align: center;
 `
 
-export default class MrThird extends Component {
+class MrThird extends Component {
   render() {
     return (
       <>
         <MrThirdStyled>
           {this.props.children}
+          <br />
+          {this.props.msg}
         </MrThirdStyled>
       </>
     )
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    msg: state.msg,
+  };
+}
+export default connect(mapStateToProps)(MrThird);

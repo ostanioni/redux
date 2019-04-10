@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 const MrFirstStyled = styled.div.attrs(
 props=>{
@@ -12,16 +13,26 @@ border: 2px solid blue;
 margin: 10px;
 text-align: center;
 `
-export default class MrFirst extends Component {
+class MrFirst extends Component {
+  showMsg = ()=>{
+    this.props.dispatch({type:'SHOW_MSG'});
+  }
   render() {
+    console.log(this.props)
     return (
-      <>
-        <MrFirstStyled>
-          <span className="center">
-            {this.props.children}
-          </span>          
-        </MrFirstStyled>
-      </>
+      <MrFirstStyled onClick={this.showMsg}>
+        <span className="center">
+          {this.props.children}
+        </span>
+        <br />
+        {this.props.msg}     
+      </MrFirstStyled>
     )
   }
 }
+function mapStateToProps(state) {
+  return {
+    msg: state.msg,
+  };
+}
+export default connect(mapStateToProps)(MrFirst);
