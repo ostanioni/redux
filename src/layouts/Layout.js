@@ -10,7 +10,6 @@ import MrFourth from 'components/MrFourth';
 
 import GlobalStyle from 'styles/GlobalStyle'
 
-// console.log(reducer)
 let store = createStore(reducer)
 
 export default class Layout extends Component {
