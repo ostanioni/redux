@@ -5,10 +5,12 @@ const MrSecondStyled = styled.div.attrs(
 props=>{
 
 })`
-width: 50%;
-height: 50%;
+width: calc(50% - 20px);
+height: 45vh;
 display: inline-block;
-border: 1px solid green;
+border: 2px solid green;
+margin: 10px;
+text-align: center;
 `
 
 export default class MrSecond extends Component {

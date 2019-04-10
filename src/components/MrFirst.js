@@ -5,18 +5,21 @@ const MrFirstStyled = styled.div.attrs(
 props=>{
 
 })`
-width: 50%;
-height: 50%;
+width: calc(50% - 20px);
+height: 45vh;
 display: inline-block;
-border: 1px solid blue;
+border: 2px solid blue;
+margin: 10px;
+text-align: center;
 `
-
 export default class MrFirst extends Component {
   render() {
     return (
       <>
         <MrFirstStyled>
-          {this.props.children}
+          <span className="center">
+            {this.props.children}
+          </span>          
         </MrFirstStyled>
       </>
     )
