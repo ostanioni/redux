@@ -24,6 +24,6 @@ const STYLED = [
 ]
 module.exports = {
   "presets": [ "@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript", ],
-  "plugins": [ DECORATOR, PROPOSAL, RUNTIME, PRISM, TRANSFORM_LITERALS, STYLED ],
+  "plugins": [ DECORATOR, PROPOSAL, RUNTIME, TRANSFORM_LITERALS, STYLED ],
 }
  
