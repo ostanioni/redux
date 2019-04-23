@@ -1,9 +1,10 @@
-# React + Redux playground (JS)
+# React + Redux (redux-saga) playground (JS)
 
 + react 16.8.6
 + redux 4.0.1
 + react-redux 7.0.1
 + redux-thunk 2.3.0
++ redux-saga 1.0.2
 + react-router 5.0
 + styled-components 4.2
 + eslint 5.16
