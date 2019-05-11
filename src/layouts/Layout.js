@@ -17,10 +17,10 @@ export default class Layout extends Component {
     return (
       <Provider store={store}>
         <GlobalStyle />
-        <MrFirst>I'm the First</MrFirst>
-        <MrSecond>I'm the Second</MrSecond>
-        <MrThird>I'm the Third</MrThird>
-        <MrFourth>I'm the Fourth</MrFourth>
+        <MrFirst> I'm the First  </MrFirst>
+        <MrSecond>I'm the Second </MrSecond>
+        <MrThird> I'm the Third  </MrThird>
+        <MrFourth>I'm the Fourth </MrFourth>
       </Provider>
     )
   }

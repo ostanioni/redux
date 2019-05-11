@@ -54,6 +54,7 @@ module.exports = {
     alias: {
       pages:      `${CONTEXT}/src/pages`,
       layouts:    `${CONTEXT}/src/layouts`,
+      reducers:   `${CONTEXT}/src/store/reducers`,
       components: `${CONTEXT}/src/components`,
       resources:  `${CONTEXT}/src/resources`,
       tables:     `${CONTEXT}/src/tables`,
