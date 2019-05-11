@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from 'store';
+import reducer from 'store/reducers';
 
 import MrFirst  from 'components/MrFirst';
 import MrSecond from 'components/MrSecond';
@@ -11,6 +11,7 @@ import MrFourth from 'components/MrFourth';
 import GlobalStyle from 'styles/GlobalStyle'
 
 let store = createStore(reducer)
+console.log(store.getState())
 
 export default class Layout extends Component {
   render() {

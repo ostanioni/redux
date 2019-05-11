@@ -15,10 +15,13 @@ text-align: center;
 `
 
 class MrSecond extends Component {
+  showMsg = ()=>{
+    this.props.dispatch({type:'SEND_MSG_FROM_MR_SECOND'});
+  }
   render() {
     return (
       <>
-        <MrSecondStyled>
+        <MrSecondStyled onClick={this.showMsg}>
           {this.props.children}
           <br />
           {this.props.msg}

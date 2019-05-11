@@ -1,6 +1,6 @@
-export default function first(state = {}, action) {
+export default function msg(state = {}, action) {
   switch (action.type) {
-    case 'SEND_MSG':
+    case 'SEND_MSG_FROM_MR_FIRST':
       return state.msg = 'Hello from Mr.First'
     default:
       return state.msg = 'Has no msg'

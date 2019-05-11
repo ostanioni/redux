@@ -1,13 +1,15 @@
 import { combineReducers } from 'redux'
 
-import first  from 'reducers/first'
-import second from 'reducers/second'
-import third  from 'reducers/third'
-import fourth  from 'reducers/fourth'
+import first   from './first'
+import second  from './second'
+import third   from './third'
+import fourth  from './fourth'
+import msg     from './msg'
 
 export default combineReducers({
-  first,
-  second,
-  third,
-  fourth,
+  // first,
+  // second,
+  // third,
+  // fourth,
+  msg,
 })
