@@ -10,8 +10,7 @@ import MrFourth from 'components/MrFourth';
 
 import GlobalStyle from 'styles/GlobalStyle'
 
-let store = createStore(reducer)
-console.log(store.getState())
+let store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 export default class Layout extends Component {
   render() {

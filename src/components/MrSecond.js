@@ -32,7 +32,7 @@ class MrSecond extends Component {
 }
 function mapStateToProps(state) {
   return {
-    msg: state.msg,
+    msg: state.msg.text,
   };
 }
 export default connect(mapStateToProps)(MrSecond);
