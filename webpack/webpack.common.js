@@ -55,6 +55,7 @@ module.exports = {
       pages:      `${CONTEXT}/src/pages`,
       layouts:    `${CONTEXT}/src/layouts`,
       reducers:   `${CONTEXT}/src/store/reducers`,
+      sagas:      `${CONTEXT}/src/store/sagas`,
       components: `${CONTEXT}/src/components`,
       resources:  `${CONTEXT}/src/resources`,
       tables:     `${CONTEXT}/src/tables`,
