@@ -15,7 +15,7 @@ text-align: center;
 `
 class MrFirst extends Component {
   showMsg = ()=>{
-    this.props.dispatch({type:'SEND_MSG', text:'Hello from Mr.First'});
+    this.props.dispatch({type:'SEND_MSG_ASYNC', text:'Hello from Mr.First'});
   }
   render() {
     console.log(this.props)

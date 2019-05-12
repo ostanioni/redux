@@ -11,12 +11,12 @@ import MrSecond from 'components/MrSecond';
 import MrThird  from 'components/MrThird';
 import MrFourth from 'components/MrFourth';
 
-import { helloSaga } from 'sagas/helloSaga';
+import rootSaga from 'sagas/helloSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, /* preloadedState, */ composeEnhancers( applyMiddleware(sagaMiddleware) ));
-sagaMiddleware.run(helloSaga)
+sagaMiddleware.run(rootSaga)
 
 export default class Layout extends Component {
   render() {
