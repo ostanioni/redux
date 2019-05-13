@@ -6,10 +6,11 @@ function* helloSaga() {
   yield console.log('Hello Sagas!')
 }
 
-function* sendAsync(action) {
+function* sendAsync({text}) {
+  const newAction = { type: 'SEND_MSG', text }
   yield delay(3000)
-  yield put( { type: 'SEND_MSG', text: action.text })
-  console.log('ACTION =  ', action)
+  yield put( newAction )
+  console.log('ACTION =  ', newAction)
 }
 
 function* watchSendAsync() {
