@@ -26,6 +26,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^4.1.14",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-lodash": "^3.3.4",
@@ -117,6 +118,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
   "eslintIgnore": [
     "/dist",
     "/node_modules",
@@ -125,5 +136,9 @@
   ],
   "stylelint": {
     "extends": "stylelint-config-recommended"
+  },
+  "pre-commit": "lint:staged",
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   }
 }
